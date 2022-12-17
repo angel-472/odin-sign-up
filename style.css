@@ -1,3 +1,7 @@
+:root {
+  --error-color: #D62323;
+}
+
 html {
   font-family: roboto;
 }
@@ -68,6 +72,7 @@ body {
 #sign-in-form div {
   display: flex;
   flex-direction: column;
+  max-width: 100%;
 }
 
 #sign-in-form label {
@@ -85,7 +90,13 @@ body {
 }
 
 #sign-in-form .error {
-  border: 2px solid #9B1E1E;
+  border: 2px solid var(--error-color) !important;
+}
+
+#sign-in-form .error-label {
+  color: var(--error-color);
+  font-weight: normal;
+  text-transform: none;
 }
 
 .footer {
@@ -102,4 +113,9 @@ body {
   color: white;
   border: none;
   border-radius: 10px;
+}
+
+.log-in {
+  color: #2085CC;
+  text-decoration: none;
 }
