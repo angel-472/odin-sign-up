@@ -1,0 +1,105 @@
+html {
+  font-family: roboto;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  max-height: 100vh;
+}
+
+.image-container {
+  width: 40vw;
+  height: 100vh;
+  background-image: url('img/background.jpg');
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  color: white;
+  background-color: black;
+  opacity: 0.5;
+  text-align: center;
+  padding: 20px;
+  flex-grow: 1;
+  font-size: 12px;
+}
+
+.container {
+  padding: 80px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  font-weight: bold;
+  font-size: 18px;
+  width: 68%;
+  padding: 0px 40px;
+}
+
+.frm {
+  background-color: #DEE2E6;
+  padding: 20px 40px;
+  display: flex;
+}
+
+.frm h2 {
+  margin: 0px 0px 10px 0px;
+}
+
+.frm-content {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#sign-in-form {
+  display: flex;
+  flex-wrap: wrap;
+  grid-row-gap: 16px;
+  grid-column-gap: 40px;
+  max-width: 80vh;
+}
+
+#sign-in-form div {
+  display: flex;
+  flex-direction: column;
+}
+
+#sign-in-form label {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  color: #495057;
+}
+
+#sign-in-form input[type=text], [type=password], [type=email]{
+  height: 22px;
+  border-radius: 5px;
+  border: 1px solid #dee2e6;
+  margin: 2px 0px;
+}
+
+#sign-in-form .error {
+  border: 2px solid #9B1E1E;
+}
+
+.footer {
+  padding: 20px 40px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-submit {
+  background-color: #2085CC;
+  height: 38px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
